@@ -59,6 +59,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 execute pathogen#infect()
 
 " https://github.com/scrooloose/nerdtree
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 " autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 

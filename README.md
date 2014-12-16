@@ -12,14 +12,18 @@
 
     sudo pip install jedi
 
+* 依赖[flake8](https://pypi.python.org/pypi/flake8)
+
+使用pip安装
+
+    sudo pip install flake8
+
 * 安装
 
 执行下面的命令
 
     git clone https://github.com/wasw100/dotfiles.git
     cd dotfiles
-    git submodule init
-    git submodule update
     ./bootstrap.sh
 
 ## 项目中使用到的代码
