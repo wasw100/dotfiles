@@ -2,14 +2,18 @@
 
 使用方法:
 
+1. 系统中需要安装ctags, mac os x可以使用brew安装, ubuntu输入ctags会提示安装命令: sudo apt-get install exuberant-ctags
+2. 依赖[jedi](https://github.com/davidhalter/jedi) 
+    
+    sudo pip install jedi
+
+3. 然后执行下面的命令
+
     git clone https://github.com/wasw100/dotfiles.git
+    cd dotfiles
+    git submodule init
+    git submodule update
     ./bootstrap.sh
-
-然后修改 ~/.vimrc中的
-
-    let g:pydiction_location
-为自己对应的目录
-
 
 同步脚本参照: [bootstrap](https://github.com/mathiasbynens/dotfiles/blob/master/bootstrap.sh)
 
@@ -26,8 +30,4 @@
 
 tag: [taglist](https://github.com/vim-scripts/taglist.vim)
 
-需要os上安装ctags, mac os x可以使用brew安装, ubuntu: sudo apt-get install exuberant-ctags
-
 awesome Python autocompletion with VIM: [jedi-vim](https://github.com/davidhalter/jedi-vim)
-
-需要安装 [jedi](https://github.com/davidhalter/jedi) pip install jedi

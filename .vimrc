@@ -75,8 +75,8 @@ let Tlist_Exit_OnlyWindow=1                  " 如果Taglist窗口是最后一�
 let Tlist_Use_Right_Window=1                 " 在右侧窗口中显示
 let Tlist_File_Fold_Auto_Close=1             " 自动折叠
 
-" 代码自动补全, 改为自己的路径
-let g:pydiction_location = '/Users/xyz/.vim/bundle/pydiction/complete-dict'
+" 代码自动补全
+let g:pydiction_location = '$HOME/.vim/bundle/pydiction/complete-dict'
 
 " https://github.com/davidhalter/jedi-vim
 let g:jedi#use_tabs_not_buffers = 0
