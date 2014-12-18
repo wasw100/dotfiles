@@ -1,3 +1,5 @@
+" 设置来自 http://zhi.hu/BhFx 和
+" https://github.com/ivannotes/dotfiles/blob/master/vim/.vimrc
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
@@ -38,13 +40,25 @@ syntax on
 filetype plugin on
 filetype plugin indent on
 
-" 以下设置来自 http://zhi.hu/BhFx
 " 显示行数，设置软回车和缩进还有语法
 set number
 set expandtab
 set tabstop=8
 set shiftwidth=4
 set softtabstop=4
+
+" set auto load file when be edited by other program
+set autoread
+
+" search ignore character case
+set ignorecase
+
+set cmdheight=2
+
+" show status
+set laststatus=2
+" http://got-ravings.blogspot.hk/2008/08/vim-pr0n-making-statuslines-that-own.html
+set statusline=%<%F\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 " 这个是我喜欢的，一旦一行的字符超出80个的话就把那些字符的背景设为红色
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
