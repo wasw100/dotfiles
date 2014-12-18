@@ -76,14 +76,11 @@ let Tlist_Exit_OnlyWindow=1                  " 如果Taglist窗口是最后一�
 let Tlist_Use_Right_Window=1                 " 在右侧窗口中显示
 let Tlist_File_Fold_Auto_Close=1             " 自动折叠
 
-" 代码自动补全
-let g:pydiction_location = '$HOME/.vim/bundle/pydiction/complete-dict'
-
 " https://github.com/davidhalter/jedi-vim
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 0
-"let g:jedi#completions_enabled = 0
-"let g:jedi#completions_command = "<C-Space>"
+" let g:jedi#completions_enabled = 0
+" let g:jedi#completions_command = "<C-Space>"
 let g:jedi#popup_select_first = 0
 let g:jedi#goto_assignments_command = ""
 let g:jedi#show_call_signatures = "0"
