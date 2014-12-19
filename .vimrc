@@ -76,6 +76,9 @@ execute pathogen#infect()
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 " autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+" 使用putty可以把下面的配置打开
+" http://superuser.com/questions/387777/what-could-cause-strange-characters-in-vim
+" let g:NERDTreeDirArrows=0
 
 " flake8快捷键, 默认是F7
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
