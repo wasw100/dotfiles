@@ -60,6 +60,11 @@ set laststatus=2
 " http://got-ravings.blogspot.hk/2008/08/vim-pr0n-making-statuslines-that-own.html
 set statusline=%<%F\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+
 " 这个是我喜欢的，一旦一行的字符超出80个的话就把那些字符的背景设为红色
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
