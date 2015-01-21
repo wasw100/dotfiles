@@ -43,7 +43,7 @@ filetype plugin indent on
 " 显示行数，设置软回车和缩进还有语法
 set number
 set expandtab
-set tabstop=8
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
