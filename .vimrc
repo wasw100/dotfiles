@@ -67,7 +67,7 @@ map <C-h> <C-w>h
 
 " 这个是我喜欢的，一旦一行的字符超出80个的话就把那些字符的背景设为红色
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+autocmd FileType python match OverLength /\%81v.\+/
 
 " 模式不同光标不同
 " http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
