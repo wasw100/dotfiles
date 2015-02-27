@@ -43,3 +43,9 @@
 tag: [taglist](https://github.com/vim-scripts/taglist.vim)
 
 awesome Python autocompletion with VIM: [jedi-vim](https://github.com/davidhalter/jedi-vim)
+
+# git
+默认user.name是name, email是 name@example.com, 通过下面的命令设置成自己的
+
+    git config --global user.name your_name
+    git config --global user.email your_email
