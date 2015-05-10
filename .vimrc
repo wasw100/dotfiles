@@ -3,10 +3,18 @@
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
+" 修复 max os x delete键无效
+set backspace=indent,eol,start
+
+if has('unnamedplus')
+    set clipboard=unnamedplus  " Share X windows clipboard.
+else
+    set clipboard=unnamed  " Share system clipboard.
+endif
+
 " Mouse
 set mouse=a
 
-set clipboard=unnamed
 set guifont=Courier\ New:h15
 set background=dark
 set encoding=utf8
