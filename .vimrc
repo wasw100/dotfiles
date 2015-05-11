@@ -16,7 +16,7 @@ set backspace=indent,eol,start
 set mouse=a
 
 set clipboard=unnamed
-set guifont=Monaco:h15
+set guifont=Monaco:h14
 " set guifont=Courier\ New:h15
 " set guifont=Lucida_Console:h15
 set background=dark
@@ -80,8 +80,14 @@ map <C-h> <C-w>h
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 autocmd FileType python match OverLength /\%81v.\+/
 
-" 模式不同光标不同
+" 模式不同光标不同, cursor
 " http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+" https://hamberg.no/erlend/posts/2014-03-09-change-vim-cursor-in-iterm.html
+" Change cursor shape between insert and normal mode in iTerm2.app
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
 
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
