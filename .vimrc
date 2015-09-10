@@ -16,12 +16,14 @@ set backspace=indent,eol,start
 set mouse=a
 
 set clipboard=unnamed
-set guifont=Monaco:h14
-" set guifont=Courier\ New:h15
+" set guifont=Monaco:h14
+set guifont=Courier\ New:h15
 " set guifont=Lucida_Console:h15
 set background=dark
-set encoding=utf8
-set fileencoding=utf8
+" set encoding=utf8
+" set fileencoding=utf8
+" 设置vim的编码识别序列 http://www.zhihu.com/question/22363620/answer/21199296
+set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 
 " auto load vimrc file
 autocmd FileType python set omnifunc=pythoncomplete#Complete
