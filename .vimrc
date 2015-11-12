@@ -25,7 +25,9 @@ set background=dark
 " 设置vim的编码识别序列 http://www.zhihu.com/question/22363620/answer/21199296
 set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 
-" auto load vimrc file
+" 修改backspace的工作模式
+set backspace=indent,eol,start
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 " disable use of included files in default completion
 set complete-=i
