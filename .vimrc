@@ -105,6 +105,7 @@ map <C-n> :NERDTreeToggle<CR>
 " let g:NERDTreeDirArrows=0
 
 " flake8快捷键, 默认是F7
+autocmd FileType python map <buffer> <leader>8 :call Flake8()<CR>
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 
 " 按F4按钮，在窗口的左侧出现taglist的窗口,像vc的左侧的workpace
