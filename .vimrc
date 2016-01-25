@@ -16,8 +16,8 @@ set backspace=indent,eol,start
 set mouse=a
 
 set clipboard=unnamed
-" set guifont=Monaco:h14
-set guifont=Courier\ New:h15
+set guifont=Monaco:h15
+" set guifont=Courier\ New:h15
 " set guifont=Lucida_Console:h15
 set background=dark
 " set encoding=utf8
@@ -122,7 +122,7 @@ let Tlist_File_Fold_Auto_Close=1             " 自动折叠
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 0
 " let g:jedi#completions_enabled = 0
-let g:jedi#completions_command = "<C-y>"
+let g:jedi#completions_command = "<C-u>"
 let g:jedi#popup_select_first = 0
 let g:jedi#goto_assignments_command = ""
 let g:jedi#show_call_signatures = "0"
@@ -136,3 +136,4 @@ nnoremap <C-t>     :tabnew<CR>
 nnoremap <C-Insert> :tabnew<CR>
 nnoremap <C-Delete> :tabclose<CR>
 
+autocmd FileType python noremap <buffer> <C-b> :exec '!python' shellescape(@%, 1)<CR>
