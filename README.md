@@ -8,15 +8,15 @@
 
 - 依赖[jedi](https://github.com/davidhalter/jedi) 
 
-使用pip安装jedi:
+安装jedi:
 
-    sudo pip install jedi
+    pip install jedi
 
 - 依赖[flake8](https://pypi.python.org/pypi/flake8)
 
-使用pip安装
+安装flake8:
 
-    sudo pip install flake8
+    pip install flake8
 
 ## 安装
 
