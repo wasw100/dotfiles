@@ -4,12 +4,12 @@
 [submodule ".vim/bundle/vim-flake8"]
 	path = .vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
-[submodule ".vim/bundle/taglist"]
-	path = .vim/bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
+[submodule ".vim/bundle/taglist.vim"]
+	path = .vim/bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
