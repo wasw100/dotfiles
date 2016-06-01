@@ -18,6 +18,8 @@ set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 
 " 显示行数
 set number
+" 显示光标位置, :help ruler
+set ruler
 
 " tab缩进
 set expandtab
@@ -27,6 +29,8 @@ set softtabstop=4
 
 " 搜索高亮
 set hlsearch
+" search ignore character case
+set ignorecase
 
 " Disable backup and swap files
 set nobackup
