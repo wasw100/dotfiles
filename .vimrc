@@ -82,7 +82,9 @@ let Tlist_Use_Right_Window=1                 " 在右侧窗口中显示
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 
 " jedi https://github.com/davidhalter/jedi-vim
-let g:jedi#completions_command = "<C-Space>"
+" let g:jedi#completions_command = "<C-Space>"
+let g:jedi#smart_auto_mappings = 0
+let g:jedi#popup_on_dot = 0
 
 autocmd FileType python noremap <buffer> <C-b> :exec '!python' shellescape(@%, 1)<CR>
 
