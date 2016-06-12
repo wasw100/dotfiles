@@ -19,7 +19,7 @@ set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 " 显示行数
 set number
 " 显示光标位置, :help ruler
-set ruler
+" set ruler
 
 " tab缩进
 set expandtab
@@ -50,9 +50,6 @@ nnoremap <C-t>     :tabnew<CR>
 
 " set auto load file when be edited by other program
 " set autoread
-
-" search ignore character case
-" set ignorecase
 
 set cmdheight=2
 
